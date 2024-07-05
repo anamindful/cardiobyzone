@@ -9,12 +9,22 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
         .container {
             max-width: 600px;
-            margin: auto;
+            margin: 30px auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: rgb(46, 71, 113);
         }
         .form-group {
             margin-bottom: 15px;
@@ -38,12 +48,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Target Heart Rate Calculator</h1>
+        <h1>Heart Rate Calculator</h1>
+        <p>Heart rate by zone based on your age.</p>
         <div class="form-group">
-            <label for="age">Age:</label>
+        
             <input type="number" id="age" placeholder="Enter your age">
         </div>
-        <button onclick="calculateTHR()">Calculate</button>
+        <button onclick="calculateTHR()">Go</button>
         <div class="results" id="results"></div>
     </div>
 
